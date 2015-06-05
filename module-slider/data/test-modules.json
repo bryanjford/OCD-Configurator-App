@@ -1,0 +1,89 @@
+{
+    "track":{
+        "url":"images/track.jpg"
+        },
+    "components":{
+        
+        "controller":{
+            "name":"controller",
+            "thumbnail":"images/comp-1-thumb.png",
+            "height": 400,
+            "width": 250,
+            "margin":{
+                "left": 50,
+                "right": 50
+                },
+            "modType":"controller"   
+        },
+        
+        "preAnalytical":{
+            "module1":{
+                "name":"centrifuge",
+                "thumbnail":"images/comp-2-thumb.png",
+                "height": 400,
+                "width": 250,
+                "margin":{
+                    "left": 50,
+                    "right": 50
+                    },
+                "modType":"pre-analytical",
+                "modTitlebar":"red"
+            },
+            "module2":{   
+                "name":"labeler",
+                "thumbnail":"images/comp-2-thumb.png",
+                "height": 400,
+                "width": 250,
+                "margin":{
+                    "left": 50,
+                    "right": 50
+                    },
+                "modType":"pre-analytical",
+                "modTitlebar":"red"
+            },
+            "module3":{   
+                "name":"aliquoter",
+                "thumbnail":"images/comp-2-thumb.png",
+                "height": 400,
+                "width": 250,
+                "margin":{
+                    "left": 50,
+                    "right": 50
+                    },
+                "modType":"pre-analytical",
+                "modTitlebar":"red"
+            }
+        },
+        
+        "analytical":{
+            "module4":{   
+                "name":"decapper",
+                "thumbnail":"images/comp-3-thumb.png",
+                "height": 400,
+                "width": 250,
+                "margin":{
+                    "left": 50,
+                    "right": 50
+                    },
+                "modType":"analytical",
+                "modTitlebar":"yellow"
+            }
+        },
+        
+        "postAnalytical":{
+            "module5":{   
+                "name":"caboose",
+                "thumbnail":"images/comp-1-thumb.png",
+                "height": 400,
+                "width": 250,
+                "margin":{
+                    "left": 50,
+                    "right": 50
+                    },
+                "modType":"post-analytical",
+                "modTitlebar":"green"
+            }
+        }
+    }
+    
+}
