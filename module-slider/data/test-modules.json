@@ -2,86 +2,216 @@
     "track":{
         "url":"images/track.jpg"
         },
+    "componentCount":6,
+    
     "components":{
         
-        "controller":{
-            "name":"controller",
-            "thumbnail":"images/comp-1-thumb.png",
-            "height": 400,
-            "width": 250,
-            "margin":{
-                "left": 50,
-                "right": 50
-                },
-            "modType":"controller"   
-        },
-        
         "preAnalytical":{
-            "module1":{
-                "name":"centrifuge",
-                "thumbnail":"images/comp-2-thumb.png",
+            "a1":{
+                "name":"Controller",
+                "thumbnail":"images/controller-test.png",
                 "height": 400,
                 "width": 250,
                 "margin":{
-                    "left": 50,
-                    "right": 50
+                    "left": 75,
+                    "right": 0
                     },
-                "modType":"pre-analytical",
-                "modTitlebar":"red"
+                "modFlag":"preAnalytical",
+                "modLabel":"Pre-Analytical",
+                "featureHeader":"Various New Product Features",
+                "featureList":{
+                    "1":"Detail One, Ipsum lorem ect...",
+                    "2":"Detail Two, Ipsum lorem ect...",
+                    "3":"Detail Three, Ipsum lorem ect...",
+                    "4":"Detail Four, Ipsum lorem ect...",
+                    "5":"Detail Five, Ipsum lorem ect..."
+                }
             },
-            "module2":{   
-                "name":"labeler",
+            "a2":{
+                "name":"PreA-Comp-1",
                 "thumbnail":"images/comp-2-thumb.png",
                 "height": 400,
                 "width": 250,
                 "margin":{
-                    "left": 50,
-                    "right": 50
+                    "left": 25,
+                    "right": 25
                     },
-                "modType":"pre-analytical",
-                "modTitlebar":"red"
+                "modFlag":"preAnalytical",
+                "modLabel":"Pre-Analytical",
+                "featureHeader":"Various New Product Features",
+                "featureList":{
+                    "1":"Detail One, Ipsum lorem ect...",
+                    "2":"Detail Two, Ipsum lorem ect...",
+                    "3":"Detail Three, Ipsum lorem ect...",
+                    "4":"Detail Four, Ipsum lorem ect...",
+                    "5":"Detail Five, Ipsum lorem ect..."
+                }
             },
-            "module3":{   
-                "name":"aliquoter",
-                "thumbnail":"images/comp-2-thumb.png",
-                "height": 400,
-                "width": 250,
-                "margin":{
-                    "left": 50,
-                    "right": 50
-                    },
-                "modType":"pre-analytical",
-                "modTitlebar":"red"
-            }
-        },
-        
-        "analytical":{
-            "module4":{   
-                "name":"decapper",
+            "a3":{   
+                "name":"PreA-Comp-2",
                 "thumbnail":"images/comp-3-thumb.png",
                 "height": 400,
                 "width": 250,
                 "margin":{
-                    "left": 50,
-                    "right": 50
+                    "left": 25,
+                    "right": 0
                     },
-                "modType":"analytical",
-                "modTitlebar":"yellow"
+                "modFlag":"preAnalytical",
+                "modLabel":"Pre-Analytical",
+                "featureHeader":"Various New Product Features",
+                "featureList":{
+                    "1":"Detail One, Ipsum lorem ect...",
+                    "2":"Detail Two, Ipsum lorem ect...",
+                    "3":"Detail Three, Ipsum lorem ect...",
+                    "4":"Detail Four, Ipsum lorem ect...",
+                    "5":"Detail Five, Ipsum lorem ect..."
+                }
+            },
+            "a4":{   
+                "name":"PreA-Comp-3",
+                "thumbnail":"images/comp-2-thumb.png",
+                "height": 400,
+                "width": 250,
+                "margin":{
+                    "left": 25,
+                    "right": 25
+                    },
+                "modFlag":"preAnalytical",
+                "modLabel":"Pre-Analytical",
+                "featureHeader":"Various New Product Features",
+                "featureList":{
+                    "1":"Detail One, Ipsum lorem ect...",
+                    "2":"Detail Two, Ipsum lorem ect...",
+                    "3":"Detail Three, Ipsum lorem ect...",
+                    "4":"Detail Four, Ipsum lorem ect...",
+                    "5":"Detail Five, Ipsum lorem ect..."
+                }
+            }
+        },
+        
+        "analytical":{
+            "b1":{   
+                "name":"A-Comp-1",
+                "thumbnail":"images/comp-3-thumb.png",
+                "height": 400,
+                "width": 250,
+                "margin":{
+                    "left": 25,
+                    "right": 25
+                    },
+                "modFlag":"analytical",
+                "modLabel":"Analytical",
+                "featureHeader":"Various New Product Features",
+                "featureList":{
+                    "1":"Detail One, Ipsum lorem ect...",
+                    "2":"Detail Two, Ipsum lorem ect...",
+                    "3":"Detail Three, Ipsum lorem ect...",
+                    "4":"Detail Four, Ipsum lorem ect...",
+                    "5":"Detail Five, Ipsum lorem ect..."
+                }
+            },
+            "b2":{   
+                "name":"A-Comp-2",
+                "thumbnail":"images/comp-3-thumb.png",
+                "height": 400,
+                "width": 250,
+                "margin":{
+                    "left": 25,
+                    "right": 25
+                    },
+                "modFlag":"analytical",
+                "modLabel":"Analytical",
+                "featureHeader":"Various New Product Features",
+                "featureList":{
+                    "1":"Detail One, Ipsum lorem ect...",
+                    "2":"Detail Two, Ipsum lorem ect...",
+                    "3":"Detail Three, Ipsum lorem ect...",
+                    "4":"Detail Four, Ipsum lorem ect...",
+                    "5":"Detail Five, Ipsum lorem ect..."
+                }
+            },
+            "a3":{   
+                "name":"PreA-Comp-3",
+                "thumbnail":"images/comp-2-thumb.png",
+                "height": 400,
+                "width": 250,
+                "margin":{
+                    "left": 25,
+                    "right": 25
+                    },
+                "modFlag":"analytical",
+                "modLabel":"Analytical",
+                "featureHeader":"Various New Product Features",
+                "featureList":{
+                    "1":"Detail One, Ipsum lorem ect...",
+                    "2":"Detail Two, Ipsum lorem ect...",
+                    "3":"Detail Three, Ipsum lorem ect...",
+                    "4":"Detail Four, Ipsum lorem ect...",
+                    "5":"Detail Five, Ipsum lorem ect..."
+                }
             }
         },
         
         "postAnalytical":{
-            "module5":{   
-                "name":"caboose",
+            "c1":{   
+                "name":"PostA-Comp-1",
                 "thumbnail":"images/comp-1-thumb.png",
                 "height": 400,
                 "width": 250,
                 "margin":{
-                    "left": 50,
-                    "right": 50
+                    "left": 25,
+                    "right": 25
                     },
-                "modType":"post-analytical",
-                "modTitlebar":"green"
+                "modFlag":"postAnalytical",
+                "modLabel":"Post-Analytical",
+                "featureHeader":"Various New Product Features",
+                "featureList":{
+                    "1":"Detail One, Ipsum lorem ect...",
+                    "2":"Detail Two, Ipsum lorem ect...",
+                    "3":"Detail Three, Ipsum lorem ect...",
+                    "4":"Detail Four, Ipsum lorem ect...",
+                    "5":"Detail Five, Ipsum lorem ect..."
+                }
+            },
+            "c2":{   
+                "name":"PostA-Comp-2",
+                "thumbnail":"images/comp-2-thumb.png",
+                "height": 400,
+                "width": 250,
+                "margin":{
+                    "left": 25,
+                    "right": 25
+                    },
+                "modFlag":"postAnalytical",
+                "modLabel":"Post-Analytical",
+                "featureHeader":"Various New Product Features",
+                "featureList":{
+                    "1":"Detail One, Ipsum lorem ect...",
+                    "2":"Detail Two, Ipsum lorem ect...",
+                    "3":"Detail Three, Ipsum lorem ect...",
+                    "4":"Detail Four, Ipsum lorem ect...",
+                    "5":"Detail Five, Ipsum lorem ect..."
+                }
+            },
+            "c3":{   
+                "name":"PostA-Comp-3",
+                "thumbnail":"images/comp-3-thumb.png",
+                "height": 400,
+                "width": 250,
+                "margin":{
+                    "left": 25,
+                    "right": 25
+                    },
+                "modFlag":"postAnalytical",
+                "modLabel":"Post-Analytical",
+                "featureHeader":"Various New Product Features",
+                "featureList":{
+                    "1":"Detail One, Ipsum lorem ect...",
+                    "2":"Detail Two, Ipsum lorem ect...",
+                    "3":"Detail Three, Ipsum lorem ect...",
+                    "4":"Detail Four, Ipsum lorem ect...",
+                    "5":"Detail Five, Ipsum lorem ect..."
+                }
             }
         }
     }

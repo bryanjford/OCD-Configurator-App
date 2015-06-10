@@ -2,6 +2,8 @@
 * {
     margin:0px;
     padding:0px;
+    font-family: "helvetica neue";
+    font-size:16px;
 }
 
 .wrapper {
@@ -18,59 +20,349 @@
 
 .nav-panel {
     border: dotted red;
-    height:130px;
+    height:110px;
     width:100%;
     position:absolute;
     top:0px;
     box-sizing: border-box;
+    background-color:#cd3247;
+    background: -webkit-linear-gradient(#902332, #cd3247, #9B3946); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#902332, #cd3247, #9B3946); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#902332, #cd3247, #9B3946); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#902332, #cd3247, #9B3946); /* Standard syntax */
 }
+
+.nav-panel h1{
+    position: absolute;
+    font-weight: 100;
+    font-size: 2.7em;
+    top:30px;
+    left:60px;
+    display: inline-block;
+    color:#FFFFF0;
+}
+
+.nav-panel #back-main-btn {
+    position: absolute;
+    height:50px;
+    width:160px;
+    float:right;
+    top:25px;
+    right:60px;
+    border-radius:5px;
+    box-shadow: 0px 0px 6px #222;
+    
+}
+
+.nav-panel #back-main-btn img{
+    float:left;
+    top:5px;
+    height:30px;
+    margin-top:10px;
+    margin-left:5px;
+}
+
+.nav-panel #back-main-btn p{
+    display: inline-block;
+    text-align: center;
+    margin-top:15px;
+    margin-left:5px;
+    color:#FFFFF0;
+}
+
 
     /* slider */
 
 #content-window {
-    position:absolute;
-    top:130px;
-    height:638px;
-    width:100%;
+    position: relative;
+    display:block;
+    overflow-x:scroll;
+    overflow-y:hidden;
+}
+
+.component-slider{
+    position: relative;
+    box-sizing: border-box;
 }
 
 .component-slider .comp-group{
     position:relative;
+    margin:0px;
+    margin-top:130px;
     display:inline-block;
+    box-sizing: border-box;
+    background-image:url("/images/track-test.png");
+    background-repeat: repeat-x;
+    background-position: 0px 340px;
 }
+
+.component-slider .comp-group:first-child{
+    background-position:50px 340px;
+    border:2px solid red;
+}
+
 
 .comp-group .comp{
     display:inline-block;
     height:500px;
+    margin-top:90px;
+    padding:0px 10px 0px 10px;
+    position:relative;
+    float:left;
 }
+
+.comp-group .comp .comp-details{
+    display: block;  
+    position: relative;
+    right:30px;
+}
+
+.comp-group .comp .comp-details p{
+    text-align: center;
+    display: inline-block;
+    font-weight:100;
+    float:left;
+}
+
+
+.comp-group .comp .comp-details .infoBtn{
+    height:40px;
+    width:40px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    margin-left:10px;
+    background-color:#cd3247;
+    border: solid 1px #444;
+    box-sizing: border-box;
+    background: -webkit-radial-gradient(#cd3247, #9B3946); /* For Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(#cd3247, #9B3946); /* For Opera 11.1 to 12.0 */
+    background: -moz-radial-gradient(#cd3247, #9B3946); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(#cd3247, #9B3946); /* Standard syntax */
+    float:left;
+}
+
 
 .comp-group .comp img{
-    height:200px;
+    height:230px;
+    
 }
-
-.comp-group .comp h1{
-    text-align: center;
-}
-
 
 .comp .titleBar {
     margin:50px 0px 150px 0px;   
 }
 
+.comp-group .header-bar {
+    height:35px;
+    margin-top:50px;
+    position: relative;
+}
 
-#preanalytical .comp .titleBar {
+.comp-group .header-bar p{
+    position: absolute;
+    top:7px;
+    left:50px;
+    font-size:1.2em;
+    font-weight:200;
+    color:white;
+        
+}
+
+#preanalytical .header-bar {
+    background-color:darkgoldenrod;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-left:50px;
+}
+
+#analytical .header-bar {
+    background-color:forestgreen;
+}
+
+#postanalytical .header-bar {
+    background-color:dodgerblue;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-right:50px;
+}
+
+
+.branding-details {
+    position:absolute;
+    bottom:20px;
+}
+
+
+.branding-details .logo-main {
+    float:left;
+    margin-left:20px;
+    font-size:1.4em;
+    font-weight: 200;
+}
+
+.branding-details p {
+    font-size: .55em;
+    float:right;
+    margin-left:20px;
+    padding-top:10px;
+}
+
+
+/*////     Details Panel     ////*/
+
+#detail-panel {
+    width: 850px;
+    height:450px;
+    border:solid 1px #444;
+    margin:auto;
+    position:absolute;
+    top:150px;
+    left:87px;
+    display:none;
+    z-index:999;
+    background: -webkit-radial-gradient(150px at center, #ddd, white); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(150px at center, #ddd, white); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(150px at center, #ddd, white); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(150px at center, #ddd, white); /* Standard syntax */
+}
+
+#detail-panel #panel-header {
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin:30px auto 0px auto;
+    width:90%;
+}
+
+#detail-panel #panel-header div{
+    height:40px;
+    position: relative;
+}
+
+#detail-panel #panel-header p{
+    display: block;
+    padding:10px 15px;
+    font-style: normal;
+    color:#fff;
+}
+
+#detail-panel #panel-header #detail-name-container{
+    background-color:#666;
+    float:left;
+    width:550px;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+}
+
+#detail-panel #panel-header #detail-name-container p{
+    position: absolute;
+    left:30px;
+    top:2px;
+    font-size: 1.6em;
+    font-weight:200;
+    
+}
+
+#detail-panel #panel-header #detail-mod-container{
+    
+    background-color:#cd3247;
+    text-align: right;
+    float:left;
+    width:150px;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+
+}
+
+#detail-panel #close-btn{
     height:30px;
+    width:30px;
+    border-radius: 20px;
+    border:2px solid white;
+    background-color:black;
+    position:absolute;
+    top:-15px;
+    right:-15px;
+    background-image:url("/images/close-btn.png");
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#detail-panel img{
+    height:230px;
+    float:left;
+    margin-top:50px;
+    margin-left:100px;
+}
+
+#detail-panel #features {
+    float:right;
+    margin-top:50px;
+    margin-right:150px;
+}
+
+#detail-panel #features h3 {
+    font-weight: 200;
+    font-size: 1.1em;
+    color:#F00;
+    margin-bottom: 5px;
+    
+}
+
+#features ul li{
+    list-style: none;
+    font-size: .9em;
+    margin-bottom:10px;
+       
+}
+
+#features ul li:before {
+    content: "+";
+    margin-right: 4px;
+    color:red;
+}
+
+
+#detail-panel #video-btn{
+    height:25px;
+    width:350px;
     background-color:red;
+    border-radius:15px;
+    position:absolute;
+    bottom:30px;
+    left:45px;
+    background: -webkit-radial-gradient(#cd3247, #9B3946); /* For Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(#cd3247, #9B3946); /* For Opera 11.1 to 12.0 */
+    background: -moz-radial-gradient(#cd3247, #9B3946); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(#cd3247, #9B3946); /* Standard syntax */
+    box-shadow: 0px 0px 6px #222;
 }
 
-#analytical .comp .titleBar {
-    height:30px;
-    background-color:yellow;
+#detail-panel #video-btn p{
+    position:relative;
+    color:white;
+    margin-top:5px;
+    text-align: center;
+    font-size: .8em;
+    background-image:url("/images/play-btn.png");
+    background-size: contain;
+    background-position: 100px 0px;
+    background-repeat: no-repeat;
 }
 
-#postanalytical .comp .titleBar {
-    height:30px;
-    background-color:green;
+
+
+    
+/*////     Overlay Panel     ////*/
+
+
+#overlay-panel {
+    width:1024px;
+    height:768px;
+    position:absolute;
+    background-color:rgba(0, 0, 0, 0.5);
+    top:0px;
+    left:0px;
+    z-index:998;
+    display:none;
 }
-
-
